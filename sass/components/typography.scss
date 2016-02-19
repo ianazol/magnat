@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'helveticaneuecyr-roman';
+    src: url('../fonts/helveticaneuecyr-roman.eot');
+    src: url('../fonts/helveticaneuecyr-roman.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaneuecyr-medium';
+    src: url('../fonts/helveticaneuecyr-medium.eot');
+    src: url('../fonts/helveticaneuecyr-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+html{
+	line-height: 1.5;
+	font-size: 15px;
+	font-family: 'helveticaneuecyr-roman', sans-serif;
+	font-weight: 300;
+	color: $base-text-color;
+}
+
+// Text Styles
+em { font-style: italic; }
+strong { font-weight: bolder; }
+small { font-size: 75%; }
