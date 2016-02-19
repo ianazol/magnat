@@ -1,0 +1,29 @@
+.catalog_filter{
+	padding: 18px 0 0 0;
+	margin: 10px 0 0 ;
+	border-top: 1px solid #eaeaea;
+}
+
+.filter{
+	display: flex;
+	.filter_item{
+		margin: 0 25px 18px 0;
+	}
+
+	.filter_name{
+		min-height: 35px;
+		display: inline-block;
+		font-size: 14px;
+		color: $light-text-color;
+		cursor: pointer;
+
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAnElEQVQIW22OMQoCQQxFk5lTWSpY6SUEOxEEsdlikkmxipUgdh5DG5stbLzUzJeIygr+Jvk/LyEsIvcQwk5ErvRHqjoFsOaU0oyITjHGiYh0fVZVR7XWCxEt2AcppSUzt0Q0zjk/PDOzQSnlBqAxs+MLdKlqA2DDzEP3ADoAezPbuv+Cb7ittc69DyGcfflz6Af0UEQOXnPOq/6/T1ffQB7OjDHdAAAAAElFTkSuQmCC) center center no-repeat;
+			margin: 0 0 0 5px;
+		}
+	}
+}

@@ -20,6 +20,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'helveticaneuecyr-light';
+    src: url('../fonts/helveticaneuecyr-light.eot');
+    src: url('../fonts/helveticaneuecyr-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 a {
 	text-decoration: none;
 }
@@ -36,3 +47,13 @@ html{
 em { font-style: italic; }
 strong { font-weight: bolder; }
 small { font-size: 75%; }
+
+h1{
+   font-size: 32px; 
+   font-family: 'helveticaneuecyr-light', sans-serif;
+   margin: 40px 0;
+
+   &.title__catalog{
+    margin: 40px 0 0;
+   }
+}

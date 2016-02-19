@@ -4,7 +4,7 @@ $secondary-color: #c7213a !default;
 $base-text-color: #4a4a4a !default;
 $light-text-color: #7e7e7e !default;
 $primary-bg: #fff !default;
-$bg: #f7f7f7 !default;
+$bg: #f0f0f0 !default;
 //$btn-color: $secondary-color;
 //$btn-color-lighten: #f33955 !default;
 //$btn-icon-color: #0b4f9f;
@@ -12,9 +12,9 @@ $bg: #f7f7f7 !default;
 
 
 // Media Query Ranges
-$small-screen: 600px !default;
+$small-screen: 768px !default;
 $medium-screen: 992px !default;
-$large-screen: 1210px !default;
+$large-screen: 1200px !default;
 $small-screen-up: $small-screen + 1;
 $medium-screen-up: $medium-screen + 1;
 $large-screen-up: $large-screen + 1;
@@ -27,4 +27,4 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 
 // Grid system
 $cols: 12;
-$gutter: 20px;
+$gutter: 10px;

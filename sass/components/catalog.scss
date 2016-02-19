@@ -1,64 +1,3 @@
-/*.cards{
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-between;
-
-	.card{
-		//flex: 0 1 calc((100% - #{$gutter} * 3) / 4 );
-		margin: $gutter 0 0;
-		background: $primary-bg;
-		width: 100%;
-
-		.card-img{
-			img{
-				vertical-align: top;
-				width: 100%;
-			}
-		}
-
-		.card-content{
-			padding: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
-		.card-price{
-			font-family: "helveticaneuecyr-medium";
-			display: block;
-			padding-top: 20px;
-
-			.old{
-				color: $light-text-color;
-				font-size: 13px;
-				display: inline-block;
-				margin-right: 10px;
-				text-decoration: line-through;
-				font-family: 'helveticaneuecyr-roman';
-			}
-		}
-
-		&:hover .card-price{
-			color: $base-text-color;
-		}
-	}
-}
-
-@media #{$medium-and-up}{
-	.card{
-		width: auto;
-		flex: 0 1 calc((100% - #{$gutter} * 2) / 3 );
-	}
-}
-
-@media #{$large-and-up}{
-	.card{
-		flex: 0 1 calc((100% - #{$gutter} * 3) / 4 );
-	}
-}*/
-
-
-
 .cards{
 	display: flex;
 	flex-wrap: wrap;
@@ -66,7 +5,7 @@
 
 	.card{
 		//flex: 0 1 calc((100% - #{$gutter} * 3) / 4 );
-		margin: $gutter 0 0;
+		margin: $gutter*2 0 0;
 		background: $primary-bg;
 		width: 100%;
 		display: flex;
@@ -132,6 +71,6 @@
 
 @media #{$large-and-up}{
 	.card{
-		flex: 0 1 calc((100% - #{$gutter} * 3) / 4 );
+		flex: 0 1 calc((100% - #{$gutter*2} * 3) / 4 );
 	}
 }

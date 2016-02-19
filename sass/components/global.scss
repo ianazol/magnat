@@ -7,7 +7,6 @@ html {
 	box-sizing: border-box;
 	color: $base-text-color;
 	height: 100%;
-  background: $bg;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -17,16 +16,11 @@ body {
 	width: 100%;
 	height: 100%;
   min-width: 320px;
+  background: $bg;
 }
 
-.workarea {
-	min-height: calc(96vh - 330px);
-	@media #{$medium-and-up}{
-		min-height: calc(96vh - 680px);
-	}
-	@media #{$large-and-up}{
-		min-height: calc(96vh - 610px);
-	}
+.bg-white{
+  background: #fff;
 }
 
 .main-conteiner{
@@ -82,6 +76,7 @@ ol.nostyle {
 		list-style-type: none;
 	}
 }
+
 
 // classic clearfix
 .clearfix {

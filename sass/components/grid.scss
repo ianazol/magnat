@@ -5,7 +5,7 @@
 }
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1220px;
 	width: 100%;
 	padding: 0 $gutter*2;
 	&.row {
@@ -37,15 +37,15 @@
 }
 @media #{$large-and-up} {
 	.container {
-		padding: 0 $gutter*1.5;
+		padding: 0 $gutter*2;
 		&.row {
 			padding: 0;
 		}
 		.row,
 		.row.col.l12{
-			width: calc(100% + #{$gutter*3});
-			margin-left: - $gutter*1.5;
-			margin-right: - $gutter*1.5;
+			width: calc(100% + #{$gutter*4});
+			margin-left: - $gutter*2;
+			margin-right: - $gutter*2;
 		}
 	}
 }
@@ -110,13 +110,13 @@
 	}
 	@media #{$large-and-up} {
 		&.col {
-			margin-left: -1.5*$gutter;
-			margin-right: -1.5*$gutter;
+			margin-left: -2*$gutter;
+			margin-right: -2*$gutter;
 		}
 
 		.col {
-			padding-left: $gutter*1.5;
-			padding-right: $gutter*1.5;
+			padding-left: $gutter*2;
+			padding-right: $gutter*2;
 			$i: 1;
 			@while $i <= $cols {
 				$perc: unquote((100 / ($cols / $i)) + "%");
@@ -194,33 +194,4 @@
   @media #{$medium-and-down} {
     display: initial !important;
   }
-}
-.full-width {
-	width: 100vw;
-	margin-left: calc(-1*(100vw - 100%)/2);
-}
-
-.s-full-width {
-	@media #{$small-and-down} {
-		width: 100vw;
-		margin-left: calc(-1*(100vw - 100%)/2);
-		.col {
-			padding-left: $gutter*2;
-			padding-right: $gutter*2;
-			float: none;
-			margin: 0;
-		}
-	}
-}
-.m-full-width {
-	@media #{$medium-only} {
-		width: 100vw;
-		margin-left: calc(-1*(100vw - 100%)/2);
-	}
-}
-.l-full-width {
-	@media #{$large-and-up} {
-		width: 100vw;
-		margin-left: calc(-1*(100vw - 100%)/2);
-	}
 }
