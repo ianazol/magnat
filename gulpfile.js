@@ -3,7 +3,9 @@ var gulp = require('gulp'),
 	minifyCSS = require('gulp-minify-css'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	svgstore = require('gulp-svgstore')
+	svg2string = require('gulp-svg2string');
 
 // css
 gulp.task('css', function() {
@@ -14,6 +16,14 @@ gulp.task('css', function() {
     	//.pipe(minifyCSS())
     	.pipe(rename('style.min.css'))
     	.pipe(gulp.dest('app/'));
+});
+
+gulp.task('svg', function () {
+  return gulp.src('images/**/*.svg')
+  	.pipe(svgstore())
+    .pipe(svg2string())
+    .pipe(rename('svg-lib.js'))
+    .pipe(gulp.dest('app/js/'));
 });
 
 //watch
