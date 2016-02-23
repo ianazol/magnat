@@ -1,0 +1,43 @@
+input{
+	&::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; font-size: 13px;}
+	&::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; font-size: 13px;}
+	&:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; font-size: 13px;}
+	&:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; font-size: 13px;}
+	&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+	&:focus{
+		outline: none;
+	}
+
+	.search &{
+		border: none;
+		height: 50px;
+		width: 100%;
+	}
+}
+
+.search form{
+	position: relative;
+	padding: 0 $gutter*4 0 $gutter*2;
+	
+	button{
+		display: block;
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		top: 17px;
+		right: 20px;
+		cursor: pointer;
+
+		svg{
+			width: 15px;
+			height: 15px;
+			position: absolute;
+		    left: 0;
+		    top: 0;
+		}
+	}
+}

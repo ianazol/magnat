@@ -4,17 +4,23 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	svgstore = require('gulp-svgstore')
-	svg2string = require('gulp-svg2string');
+	svgstore = require('gulp-svgstore'),
+	plumber = require('gulp-plumber'),
+	svg2string = require('gulp-svg2string'),
+	sourcemaps = require('gulp-sourcemaps');
 
 // css
 gulp.task('css', function() {
 	return gulp.src('sass/main.scss')
+		.pipe(plumber())
+		.pipe(sourcemaps.init())
 		.pipe(sass())
     	//.pipe(concatCss("style.css"))
     	.pipe(autoprefixer({ browsers: ['last 2 versions', '> 1%', 'IE 9'], cascade: false }))
     	//.pipe(minifyCSS())
     	.pipe(rename('style.min.css'))
+    	.pipe(sourcemaps.write())
+    	.pipe(plumber.stop())
     	.pipe(gulp.dest('app/'));
 });
 
@@ -30,6 +36,7 @@ gulp.task('svg', function () {
 gulp.task('watch', function(){
 	gulp.watch('sass/*.scss', ['css'])
 	gulp.watch('sass/**/*.scss', ['css'])
+	gulp.watch('images/**/*.svg', ['svg'])
 });
 
 //default

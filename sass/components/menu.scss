@@ -1,0 +1,62 @@
+.menu{
+	background: $primary-color;
+
+	.sub_menu{
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .3s;
+		background: #fff;
+		left: 0px;
+		right: 0px;
+		padding: 25px 0;
+		z-index: 2;
+		box-shadow: 0 1px 15px rgba(56, 56, 56, 0.2);
+
+		a{
+			display: inline-block;
+			color: $primary-color;
+			margin: 0 0 5px 0;
+
+			&.sub_menu_title{
+				font-size: 18px;
+				margin: 0 0 15px 0;
+				color: $base-text-color;
+			}
+		}
+	}
+
+	ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+
+		li:hover .sub_menu{
+			opacity: 1;
+			visibility: visible;
+		}
+
+		& > li > a{
+			color: #fff;
+			display: flex;
+			height: 55px;
+			align-items: center;
+		}
+
+		.menu_icon{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			vertical-align: -2px;
+			margin: 0 5px 0 0;
+
+			svg{
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+
+
+}

@@ -9,16 +9,10 @@
 // components
 @import "components/typography";
 @import "components/global";
-//@import "components/buttons";
+@import "components/_head";
+@import "components/_form";
+@import "components/menu";
 @import "components/_flex-grid";
-//@import "components/segoeui";
-//@import "components/rouble";
-
-//@import "components/carousel";
-
-//@import "components/dropdown";
-
-//@import "components/collapsible";
-//@import "components/forms";
 @import "components/catalog";
+@import "components/_pagenav";
 @import "components/filter";

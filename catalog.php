@@ -110,5 +110,64 @@
 	    </div>
         <div class="card-price">от 85 000.–</div>
     </a>
+     <a href="#" class="card">
+		<div>
+	        <div class="card-img">
+	            <img src="images/1.png" alt="">
+	        </div>
+		    <span class="card-name">Белый угловой диван Севилья с механизмом Sedaflex</span>
+	    </div>
+        <div class="card-price">от 75 510.–</div>
+    </a>
+    <a href="#" class="card">
+		<div>
+	        <div class="card-img">
+	            <img src="images/2.png" alt="">
+	        </div>
+		    <span class="card-name">Диван Капри</span>
+	    </div>
+        <div class="card-price"><span class="old">58 200.–</span>52 200.–</div>
+    </a>
+    <a href="#" class="card">
+		<div>
+	        <div class="card-img">
+	            <img src="images/3.png" alt="">
+	        </div>
+		    <span class="card-name">Угловой диван Майами</span>
+	    </div>
+        <div class="card-price">от 30 900.–</div>
+    </a>
+    <a href="#" class="card">
+		<div>
+	        <div class="card-img">
+	            <img src="images/4.png" alt="">
+	        </div>
+		    <span class="card-name">Диван Леон</span>
+	    </div>
+        <div class="card-price">от 85 000.–</div>
+    </a>
 </section>
+<div class="main-conteiner">
+	<nav class="pages">
+		<a href="#" class="start_page">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="#arrow"></use>
+			</svg>
+		</a>
+		<a href="#" class="page active">1</a>
+		<a href="#" class="page">2</a>
+		<a href="#" class="page">3</a>
+		<a href="#" class="end_page">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<use xlink:href="#arrow"></use>
+			</svg>
+		</a>		
+	</nav>
+	<section class="catalog-text">
+		<h2>Диваны в Тюмени</h2>
+		<p>Все мы разные, но нас объединяет одно — все мы хотим, чтобы наш дом был стильным и уютным. В интернет–магазине мебели "Новый Магнат" вы можете купить мягкую мебель удобную для сидения, располагающую к комфортному отдыху и приятному сну. Современные, красивые, удобные, качественные, надежные угловые и обычные диваны идеально впишутся в интерьер вашей <a href="#">гостиной</a> или <a href="#">спальни</a>, <a href="#">детской</a> или <a href="#">кухни</a>.</p>
+		<p>Сегодня в мебельном интернет–магазине большой выбор мягкой мебели и диванов таких известных брендов, как: Divani&Divani, Ardoni, Мебель Братьев Баженовых, Hit Mebel, ТРИЭС, Калинка, Allant, Pushe, Артспутник и Юнусов & К. Купите мягкую мебель Вашей мечты в ТЦ Новый Магнат! </p>
+		<p>Любителей производить впечатление порадует и удивит ассортимент кожаных диванов и кресел. Солидность, представительность, респектабельность, престижность, практичность, характеризуют кожаную мебель и ее владельцев.</p>
+	</section>
+</div>
 <?include("footer.php");?>

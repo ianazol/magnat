@@ -38,13 +38,21 @@
 
 		.card-name{
 			padding: 20px;
+			font-size: 15px;
 			display: inline-block;
+			color: $base-text-color;
+		}
+
+		&:hover .card-name{
+			color: $primary-color;
 		}
 
 		.card-price{
 			font-family: "helveticaneuecyr-medium";
 			display: block;
 			padding: 0 20px 20px;
+			color: $base-text-color;
+			font-size: 15px;
 
 			.old{
 				color: $light-text-color;
@@ -55,11 +63,11 @@
 				font-family: 'helveticaneuecyr-roman';
 			}
 		}
-
-		&:hover .card-price{
-			color: $base-text-color;
-		}
 	}
+}
+
+.catalog-text{
+	margin: 60px 0;
 }
 
 @media #{$medium-and-up}{

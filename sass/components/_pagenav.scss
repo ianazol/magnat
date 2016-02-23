@@ -1,0 +1,39 @@
+.pages{
+	display: flex;
+	justify-content: center;
+	margin: 60px 0;
+
+	a{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: white;
+		line-height: 40px;
+		text-align: center;
+		font-size: 13px;
+		color: $base-text-color;
+
+		&.active{
+			background: $primary-color;
+			color: white;
+		}
+
+		&:not(:last-child){
+			border-right: 1px solid #d8d8d8;
+		}
+
+		svg{
+			width: 6px;
+			height: 10px;
+			fill: $base-text-color;
+		}
+
+		&:hover svg{
+			fill: $primary-color;
+		}
+
+		&.start_page svg{
+			transform: rotate(180deg);
+		}
+	}
+}
