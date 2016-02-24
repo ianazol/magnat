@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	document.querySelector('.svg-placeholder').innerHTML = SVG_SPRITE;
+	$('.svg-placeholder').html(SVG_SPRITE);
 });

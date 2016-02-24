@@ -32,7 +32,8 @@
 			fill: $primary-color;
 		}
 
-		&.start_page svg{
+		&.start_page span{
+			display: inline-block;
 			transform: rotate(180deg);
 		}
 	}

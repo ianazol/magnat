@@ -19,7 +19,7 @@
 <header>
 	<div class="main-conteiner header_content">
 		<div class="logo">
-			<div class=""><img src="../images/logo.jpg" /></div>
+			<img src="../images/logo.jpg" />
 		</div>
 		<div class="header-col-right">
 			<div class="row">

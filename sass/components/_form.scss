@@ -17,6 +17,31 @@ input{
 		height: 50px;
 		width: 100%;
 	}
+
+	&[type=checkbox]{
+		display:none; 
+
+		+ label{
+			cursor: pointer;
+			color: $light-text-color;
+
+			&:before{
+				content: "";
+			    display: inline-block;
+			    height: 14px;
+			    width: 14px;
+			    margin: 0 10px 0 0;
+			    background-image: url(../images/checkbox.png);
+			    background-repeat: no-repeat;
+			    vertical-align: middle;
+			}
+		}
+
+		/*&:checked + label:before{
+			background-position: 0px -14px;
+		}*/
+	}
+
 }
 
 .search form{
@@ -38,6 +63,45 @@ input{
 			position: absolute;
 		    left: 0;
 		    top: 0;
+		}
+	}
+}
+
+.subscribe{
+	p{
+		margin: 0 0 15px;
+		color: $light-text-color;
+	}
+
+	form{
+		position: relative;
+
+		input[type=text]{
+			border: none;
+			border-bottom: 1px solid #979797;
+			height: 30px;
+			width: 100%;
+
+			&::-webkit-input-placeholder       {font-size: 14px;}
+			&::-moz-placeholder                {font-size: 14px;}
+			&:-moz-placeholder                 {font-size: 14px;}
+			&:-ms-input-placeholder            {font-size: 14px;}
+		}
+
+		button{
+			width: 20px;
+			height: 10px;
+			position: absolute;
+			top: calc(50% - 10px / 2);
+			right: 0;
+
+			svg{
+				width: 20px;
+				height: 10px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
 		}
 	}
 }

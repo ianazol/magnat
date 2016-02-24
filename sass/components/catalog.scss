@@ -41,6 +41,7 @@
 			font-size: 15px;
 			display: inline-block;
 			color: $base-text-color;
+			min-height:80px;
 		}
 
 		&:hover .card-name{
@@ -62,6 +63,34 @@
 				text-decoration: line-through;
 				font-family: 'helveticaneuecyr-roman';
 			}
+		}
+	}
+
+	.article_link{
+		justify-content: flex-start;
+		padding: 30px 20px;
+		position: relative;
+
+		.article_title{
+			margin: 25px 0;
+			display: inline-block;
+			font-size: 20px;
+		}
+
+		p{
+			margin: 0 0 20px;
+			color:$light-text-color;
+		}
+
+		&::after{
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			display:block;
+			width: 31px;
+			height: 30px;
+			background: $bg url(../images/triangle.png) left top no-repeat;
 		}
 	}
 }

@@ -4,6 +4,11 @@
 	border-top: 1px solid #eaeaea;
 }
 
+.sort{
+	text-align: right;
+	color: $light-text-color;
+}
+
 .filter{
 	display: flex;
 	.filter_item{
@@ -11,11 +16,13 @@
 	}
 
 	.filter_name{
-		min-height: 35px;
+		height: 35px;
+		line-height: 35px;
 		display: inline-block;
 		font-size: 14px;
 		color: $light-text-color;
 		cursor: pointer;
+		vertical-align: -1px;
 
 		&:after{
 			content: "";
@@ -24,6 +31,62 @@
 			height: 10px;
 			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAnElEQVQIW22OMQoCQQxFk5lTWSpY6SUEOxEEsdlikkmxipUgdh5DG5stbLzUzJeIygr+Jvk/LyEsIvcQwk5ErvRHqjoFsOaU0oyITjHGiYh0fVZVR7XWCxEt2AcppSUzt0Q0zjk/PDOzQSnlBqAxs+MLdKlqA2DDzEP3ADoAezPbuv+Cb7ittc69DyGcfflz6Af0UEQOXnPOq/6/T1ffQB7OjDHdAAAAAElFTkSuQmCC) center center no-repeat;
 			margin: 0 0 0 5px;
+		}
+	}
+
+	.filter_dropdown{
+		position: relative;
+
+		.filter_dropdown_list{
+			padding: 20px 0;
+			position: absolute;
+			margin-top: 10px;
+			box-shadow: 0 1px 15px rgba(56, 56, 56, 0.2);
+			background: white;
+			z-index: 3;
+
+			&:before{
+				content: "";
+				display: block;
+				width: 15px;
+				height: 15px;
+				box-shadow: 0 1px 15px rgba(56, 56, 56, 0.2);
+				background: white;
+				transform: rotate(45deg);
+				position: absolute;
+				top: -7px;
+				left: 17px;
+				z-index: 2;
+			}
+
+			&:after{
+				content: "";
+				display: block;
+				background: white;
+				position: absolute;
+				height: 20px;
+				top: 0;
+				width: 100%;
+				z-index: 3;
+			}
+
+			.filter_variants{
+				width: 280px;
+				max-height: 205px;
+				padding: 0 0 0 20px;
+				overflow-y: auto;
+				z-index: 3;
+				position: relative;
+				background: white;
+				
+				.variant{
+					margin: 0 0 10px 0;
+
+					&:last-child{
+						margin: 0;
+					}
+				}
+			}
 		}
 	}
 }

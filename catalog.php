@@ -28,25 +28,71 @@
 							</div>
 							<span class="filter_reset"></span>
 						</div>
+						<div class="filter_item">
+							<div class="filter_dropdown">
+								<span class="filter_name">Бренд</span>
+							</div>
+							<span class="filter_reset"></span>
+						</div>
+						<div class="filter_item">
+							<div class="filter_dropdown">
+								<span class="filter_name">Механизм трансформации</span>
+								<div class="filter_dropdown_list">
+									<div class="filter_variants">
+										<div class="variant">
+											<input type="checkbox" name="v1" />
+											<label for="v1">аккордеон</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v2" />
+											<label for="v2">американская раскладушка</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v3" />
+											<label for="v3">выкатной</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v4" />
+											<label for="v4">дельфин</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v5" />
+											<label for="v5">еврокнижка</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v6" />
+											<label for="v6">еврософа</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v7" />
+											<label for="v7">французская раскладушка</label>
+										</div>
+										<div class="variant">
+											<input type="checkbox" name="v8" />
+											<label for="v8">аккордеон</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="filter_reset"></span>
+						</div>
+						<div class="filter_item">
+							<div class="filter_dropdown">
+								<span class="filter_name">Количество мест</span>
+							</div>
+							<span class="filter_reset"></span>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
-					Сортировать 
+				<div class="col-lg-3 sort">
+					Сортировать: 
+					
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <section class="cards main-conteiner">
-	<a href="#" class="card">
-		<div>
-	        <div class="card-img">
-	            <img src="images/1.png" alt="">
-	        </div>
-		    <span class="card-name">Белый угловой диван Севилья с механизмом Sedaflex</span>
-	    </div>
-        <div class="card-price">от 75 510.–</div>
-    </a>
     <a href="#" class="card">
 		<div>
 	        <div class="card-img">
@@ -86,11 +132,34 @@
     <a href="#" class="card">
 		<div>
 	        <div class="card-img">
+	            <img src="images/1.png" alt="">
+	        </div>
+		    <span class="card-name">Белый угловой диван Севилья с механизмом Sedaflex</span>
+	    </div>
+        <div class="card-price">от 75 510.–</div>
+    </a>
+    <a href="#" class="card ">
+		<div>
+	        <div class="card-img">
 	            <img src="images/2.png" alt="">
 	        </div>
 		    <span class="card-name">Диван Капри</span>
 	    </div>
         <div class="card-price"><span class="old">58 200.–</span>52 200.–</div>
+    </a>
+    <div class="card article_link">
+		<span class="article_title">Как выбрать диван?</span>
+		<p>В этой статье мы расскажем о том, как правильно выбрать диван, и на что нужно обращать особое внимание при его покупке.</p>
+		<a href="#">Читать статью</a>
+    </div>
+    <a href="#" class="card">
+		<div>
+	        <div class="card-img">
+	            <img src="images/3.png" alt="">
+	        </div>
+		    <span class="card-name">Угловой диван Майами</span>
+	    </div>
+        <div class="card-price">от 30 900.–</div>
     </a>
     <a href="#" class="card">
 		<div>
@@ -128,39 +197,26 @@
 	    </div>
         <div class="card-price"><span class="old">58 200.–</span>52 200.–</div>
     </a>
-    <a href="#" class="card">
-		<div>
-	        <div class="card-img">
-	            <img src="images/3.png" alt="">
-	        </div>
-		    <span class="card-name">Угловой диван Майами</span>
-	    </div>
-        <div class="card-price">от 30 900.–</div>
-    </a>
-    <a href="#" class="card">
-		<div>
-	        <div class="card-img">
-	            <img src="images/4.png" alt="">
-	        </div>
-		    <span class="card-name">Диван Леон</span>
-	    </div>
-        <div class="card-price">от 85 000.–</div>
-    </a>
+    
 </section>
 <div class="main-conteiner">
 	<nav class="pages">
 		<a href="#" class="start_page">
-			<svg xmlns="http://www.w3.org/2000/svg">
-				<use xlink:href="#arrow"></use>
-			</svg>
+			<span>
+				<svg xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="#arrow"></use>
+				</svg>
+			</span>
 		</a>
 		<a href="#" class="page active">1</a>
 		<a href="#" class="page">2</a>
 		<a href="#" class="page">3</a>
 		<a href="#" class="end_page">
-			<svg xmlns="http://www.w3.org/2000/svg">
-				<use xlink:href="#arrow"></use>
-			</svg>
+			<span>
+				<svg xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="#arrow"></use>
+				</svg>
+			</span>
 		</a>		
 	</nav>
 	<section class="catalog-text">

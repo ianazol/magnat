@@ -1,0 +1,44 @@
+footer{
+	background: white;
+
+	.footer-row-first{
+		padding: 55px 0 50px;
+	}
+
+	.footer-row-second{
+		padding: 15px 0;
+	}
+
+	.logo img{
+		max-width: 220px;
+	}
+
+	.footer_menu{
+		a{
+			display: inline-block;
+			color: $light-text-color;
+			margin: 0 0 5px;
+		}
+	}
+
+	.footer_title{
+		font-size: 16px;
+		display: inline-block;
+		margin: 0 0 15px;
+	}
+
+	.copyright{
+		color: $light-text-color;
+	}
+
+	.up-link{
+		text-align: right;
+		a{
+			color: $base-text-color;
+		}
+	}
+
+	hr{
+		border-top: 1px solid #d8d8d8;
+	}
+}
